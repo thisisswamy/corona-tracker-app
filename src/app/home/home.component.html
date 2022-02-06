@@ -1,0 +1,52 @@
+
+<div class="container block-1">
+    <div class="row">
+        <div class="col card">
+            <h3>{{myDate | date :'EEEE  MMM, d, y' }}</h3>
+            <div class="border-bottom"></div>  
+            <p>{{totalCount | number}}</p>
+            <small>Total cases reported as of today </small>
+                  
+        </div>    
+    </div>
+</div>
+
+<div class="container">
+  <div class="container search-box">
+    <div>
+      <b>Search :</b>
+    </div>
+    <div>
+      <input type="text" placeholder="Search by country.." class="form-control"  ngModel name="search" [(ngModel)]="search">
+    </div>
+   
+  </div>
+</div>
+
+
+<div class="container data">
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Country</th>
+            <!-- <th scope="col">State </th> -->
+            <th scope="col">Total Cases Reported</th>
+            <th scope="col">New Cases Reported</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr *ngFor="let obj of dailyCovidCasesReport | searchfilter:search ; index as i">
+            <th scope="row">{{i+1}}</th>
+            <td>{{obj.country}}</td>
+            <!-- <td>{{obj.state}}</td> -->
+            <td>{{obj.reportedCases}}</td>
+            <td>{{ obj.difference }}</td>
+          </tr>
+        
+         
+        </tbody>
+      </table>
+</div>

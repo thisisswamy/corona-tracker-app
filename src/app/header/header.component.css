@@ -1,0 +1,29 @@
+.nav-bar{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: darkblue;
+    padding: 10px;
+    
+}
+.nav-bar .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 700;
+
+}
+.nav-bar .logo{
+    margin-right: 100px;
+}
+.nav-items a{
+    text-decoration: none;
+    color:white;
+    margin-right: 30px;
+    font-weight: 600;
+}
+.nav-items a:hover{
+    color:blueviolet;
+}

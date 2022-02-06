@@ -1,0 +1,54 @@
+.block-1{
+    margin-top: 30px;
+}
+
+.card{
+    background-color: aliceblue;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+.card p{
+    margin: 0 0;
+    font-size: 3em;
+    font-weight: 700;
+   
+}
+.card small{
+    color: brown;
+}
+.card h3{
+    padding: 7px 0;
+   
+}
+.card .border-bottom{
+    width: 250px;
+    
+}
+.data{
+    margin-top: 50px;
+}
+.search-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box b{
+    font-size:1.3em;
+    margin-right:5px;
+}
+.search-box input{
+
+    outline-style: none;
+    /* border-bottom:1.4px solid black; */
+
+}
+.chart-box{
+    margin: 10px;
+}
+@media(max-width:720px){
+    .search-box{
+        flex-direction: column;
+    }
+}
